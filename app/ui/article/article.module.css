@@ -1,0 +1,294 @@
+
+.headerArticle {
+    background-color: #ffffff;
+    height: 300px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin: 20px auto;
+}
+
+.headerArticleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 39%;
+}
+
+.card {
+    background-color: rgba(var(--secondary-1-rgb), 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 4.6428571429rem;
+    width: 90px;
+    border-bottom: .625rem solid var(--secondary-7);
+    border-radius: 1rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.day {
+    color: var(--secondary-7);
+    font-size: 2.75rem;
+    font-family: "Font-Regular";
+    line-height: 0.6;
+}
+
+.month {
+    color: var(--secondary-7);
+    font-family: "Font-Light";
+    line-height: 1.2;
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+.title {
+    font-family: "Font-Regular";
+    color: var(--font-black);
+    margin: 0 1.1428571429rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+
+}
+
+.dateContainer {
+    display: flex;
+    margin: 20px 5px;
+    align-self: end;
+}
+
+.dateSvgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .625rem;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(var(--th-Primary-1-rgb), 0.1);
+    margin-left: 5px;
+
+}
+
+.dateSvg {
+    width: 20px;
+    height: 20px;
+}
+
+.dateTextContainer {
+    color: var(--font-black);
+    line-height: 1.5;
+    font-size: 1.125rem;
+    white-space: nowrap;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin-right: 5px;
+}
+
+.dateFrom,
+.dateTo {
+    display: flex;
+    gap: 5px;
+    font-family: "Font-Light";
+}
+
+.from,
+.to {
+    font-family: "Font-Regular";
+    width: 2.1428571429rem;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.cityInfoContainer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.citySvgConatiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .625rem;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(var(--th-Primary-1-rgb), 0.1);
+    margin: 10px 5px;
+}
+
+.cityTitleText {
+    font-size: 1.125rem;
+    font-family: "Font-Regular";
+    color: #052976;
+    opacity: .8;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.cityNameText {
+    color: var(--font-black);
+    font-family: "Font-Light";
+    margin-right: 4em;
+    margin-bottom: .5714285714rem;
+    border-radius: .5714285714rem;
+    width: 30px;
+    text-align: center;
+    height: 25px;
+    background-color: var(--dark-grey-5);
+}
+
+.headerArticleImage {
+    position: absolute;
+    top: 125px;
+    left: 550px;
+    border-radius: 0.5em;
+}
+
+@font-face {
+    font-family: "Font-Light";
+    font-style: normal;
+    font-weight: 300;
+    src: url("/fonts/PingAR_LT_Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Font-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/PingAR_LT_Medium.otf") format("opentype");
+}
+
+@media (min-width: 320px ) and (max-width: 374px) {
+    .headerArticle {
+        width: 310px;
+        height: 500px;
+    }
+
+    .title {
+        width: 210px;
+        text-align: right;
+    }
+
+    .day {
+        width: 80px;
+    }
+
+    .headerArticleImage {
+        position: relative;
+        left: -5px;
+        top: 20px;
+        width: 300px;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 375px ) and (max-width: 424px) {
+    .headerArticle {
+        width: 350px;
+        height: 500px;
+    }
+
+    .title {
+        width: 210px;
+        text-align: right;
+    }
+
+    .day {
+        width: 80px;
+    }
+
+    .headerArticleImage {
+        position: relative;
+        left: -5px;
+        top: 20px;
+        width: 340px;
+        height: 320px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 425px ) and (max-width: 767px) {
+    .headerArticle {
+        width: 390px;
+        height: 550px;
+    }
+
+    .title {
+        width: 210px;
+        text-align: right;
+    }
+
+    .day {
+        width: 80px;
+    }
+
+    .headerArticleImage {
+        position: relative;
+        left: -5px;
+        top: 20px;
+        width: 380px;
+        height: 380px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 768px ) and (max-width: 1023px) {
+    .headerArticle {
+        width: 700px;
+        height: 750px;
+    }
+
+    .title {
+        width: 400px;
+        text-align: right;
+    }
+
+    .day {
+        width: 80px;
+    }
+
+    .headerArticleImage {
+        position: relative;
+        left: -5px;
+        top: 20px;
+        width: 690px;
+        height: 500px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1024px ) and (max-width: 1438px) {
+    .headerArticle {
+        width: 960px;
+        height: 800px;
+        margin-bottom: 5px;
+    }
+
+    .title {
+        width: 400px;
+        text-align: right;
+    }
+
+    .day {
+        width: 80px;
+    }
+
+    .headerArticleImage {
+        position: relative;
+        left: -5px;
+        top: 20px;
+        width: 950px;
+        height: 500px;
+        margin-bottom: 20px;
+    }
+}
