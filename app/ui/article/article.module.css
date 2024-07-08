@@ -171,6 +171,8 @@
     .headerArticle {
         width: 310px;
         height: 500px;
+        margin-right:5px;
+
     }
 
     .title {
@@ -194,6 +196,7 @@
 
 @media (min-width: 375px ) and (max-width: 424px) {
     .headerArticle {
+        margin-right:12px;
         width: 350px;
         height: 500px;
     }
@@ -246,6 +249,8 @@
     .headerArticle {
         width: 700px;
         height: 750px;
+        margin-right:35px;
+
     }
 
     .title {
