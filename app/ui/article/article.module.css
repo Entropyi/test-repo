@@ -196,7 +196,7 @@
 
 @media (min-width: 375px ) and (max-width: 424px) {
     .headerArticle {
-        margin-right:12px;
+        margin-right:10px;
         width: 350px;
         height: 500px;
     }
