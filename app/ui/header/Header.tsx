@@ -3,9 +3,23 @@ import Image from "next/image";
 
 export default function Header() {
     return (
-        <>
+        <div className={styles.headerContainer}>
+
             <div
-                className={styles.header}
+                className={styles.headerLanguagesSwitchContainer}
+            >
+                <Image
+                    src={"/lang.svg"}
+                    alt={"RCYCI Logo"}
+                    width={18.3}
+                    height={18}
+                    className={styles.langSvg}
+                />
+                <p className={styles.englishLangText}>En</p>
+            </div>
+
+            <div
+                className={styles.headerLogoContainer}
             >
                 <Image
                     src={"/navbar_logo.png"}
@@ -14,6 +28,7 @@ export default function Header() {
                     height={45}
                 />
             </div>
-        </>
+
+        </div>
     )
 }

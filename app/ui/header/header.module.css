@@ -1,9 +1,79 @@
-.header{
+.headerContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--th-Primary);
     width: 100%;
     height: 90px;
+}
 
+.headerLanguagesSwitchContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 5px;
+    right: 310px;
+}
+
+.englishLangText {
+    color: var(--white);
+    font-family: "Font-Regular";
+    position: relative;
+    top: 4px;
+}
+
+.headerLanguagesSwitchContainer:hover {
+    background-color: var(--secondary-1);
+    transition: 2ms ea;
+    border-radius: .625rem;
+}
+
+.englishLangSvg:hover {
+    background-color: rgba(var(--secondary-1-rgb), 0.1);
+}
+
+@font-face {
+    font-family: "Font-Light";
+    font-style: normal;
+    font-weight: 300;
+    src: url("/fonts/PingAR_LT_Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Font-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/PingAR_LT_Medium.otf") format("opentype");
+}
+
+@media (min-width: 320px ) and (max-width: 374px) {
+    .headerLanguagesSwitchContainer{
+        right: 50px;
+    }
+}
+
+@media (min-width: 375px ) and (max-width: 424px) {
+    .headerLanguagesSwitchContainer{
+        right: 60px;
+    }
+}
+
+@media (min-width: 425px ) and (max-width: 767px) {
+    .headerLanguagesSwitchContainer{
+        right: 90px;
+    }
+}
+
+@media (min-width: 768px ) and (max-width: 1023px) {
+    .headerLanguagesSwitchContainer{
+        right: 240px;
+    }
+}
+
+
+@media (min-width: 1024px ) and (max-width: 1438px) {
+    .headerLanguagesSwitchContainer{
+        right: 370px;
+    }
 }
