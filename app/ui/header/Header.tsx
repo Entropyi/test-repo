@@ -1,7 +1,15 @@
+"use client"
+
 import styles from "./header.module.css";
 import Image from "next/image";
+import {useRouter} from "next/router";
 
 export default function Header() {
+    const langSwitch = () =>{
+        const newLang = "ar" ? "en" : "ar";
+        console.log(newLang)
+    }
+
     return (
         <div className={styles.headerContainer}>
 
@@ -14,6 +22,8 @@ export default function Header() {
                     width={18.3}
                     height={18}
                     className={styles.langSvg}
+                    onClick={langSwitch}
+
                 />
                 <p className={styles.englishLangText}>En</p>
             </div>
