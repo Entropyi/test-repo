@@ -1,13 +1,14 @@
 import styles from "@/app/ui/introduction/introduction.module.css";
 import Image from "next/image";
+import {useTranslations} from "next-intl";
 
 
 export default function Introduction() {
+    const translations = useTranslations("HomePage");
     return (
         <div className={styles.introductionRoot}>
             <div className={styles.introductionRootContainer}>
                 <div className={styles.detailsTitleContainer}>
-                    <p className={styles.detailsTitleText}>تفاصيل المسابقة</p>
                     <div className={styles.detailsSvgContainer}>
                         <Image
                             src={"/align-right-svgrepo-com.svg"}
@@ -19,9 +20,9 @@ export default function Introduction() {
 
                         />
                     </div>
+                    <p className={styles.detailsTitleText}>{translations('CompDetailsTitle')}</p>
                 </div>
                 <div className={styles.introTitleContainer}>
-                    <p className={styles.detailsTitleText}>مقدمة</p>
                     <div className={styles.detailsSvgContainer}>
                         <Image
                             src={"/shield-exclamation-svgrepo-com.svg"}
@@ -30,15 +31,12 @@ export default function Introduction() {
                             height={20}
                             className={styles.detailsTitleSvg}
                             draggable={false}
-
                         />
                     </div>
+                    <p className={styles.detailsTitleText}>{translations('introductionTitle')}</p>
                 </div>
-                <p className={styles.introductionText}>
-                    تهدف المسابقة إلى رفع درجة الوعي لدى جميع شرائح المجتمع تجاه البيئة التي نعيش فيها بغرض المحافظة
-                    عليها والاهتمام بها وتنشئة جيل قادم يؤمن بهاذا المفهوم ويكون جزء من تصرفاته اليومية. </p>
+                <p className={styles.introductionText}>{translations('introductionText')}</p>
                 <div className={styles.introTitleContainer}>
-                    <p className={styles.detailsTitleText}>محاور المسابقة</p>
                     <div className={styles.detailsSvgContainer}>
                         <Image
                             src={"/white-board-svgrepo-com.svg"}
@@ -49,28 +47,16 @@ export default function Introduction() {
                             draggable={false}
                         />
                     </div>
+                    <p className={styles.detailsTitleText}>{translations('CompCategoriesTitle')}</p>
                 </div>
-                <p className={styles.introductionText}>
-                    المحور الأساسي هو الطبيعة والبيئة والمناظر وعلى المتسابقين تقديم أفضل الصور والمناظر الطبيعية بصفتها
-                    الأصلية والحقيقة.
-                    وتهدف المسابقة إلى وضع علامة ايجابية للبيئة والطبيعة في كوكبنا بحيث نجعل كوكب الأرض فريد من نوعه
-                    وتشمل الصور:
-                </p>
+                <p className={styles.introductionText}>{translations('CompCategoriesTextMain')}</p>
                 <br/>
-                <p className={styles.introductionText}>
-                    - صور المناظر الطبيعية المذهلة في الأضواء المختلفة. </p>
-                <p className={styles.introductionText}>
-                    - حالات الطقس المتغيرة</p>
-                <p className={styles.introductionText}>
-                    - عالم مياه البحار والبحيرات المتكونة من الأمطار.
-                </p>
-                <p className={styles.introductionText}>
-                    - التنوع الحيوي من الكائنات الحية والنباتات
-                </p>
+                <p className={styles.introductionText}>{translations('CompCategoriesTextSub1')}</p>
+                <p className={styles.introductionText}>{translations('CompCategoriesTextSub2')}</p>
+                <p className={styles.introductionText}>{translations('CompCategoriesTextSub3')}</p>
 
                 <div className={styles.spacing}>
                     <div className={styles.introTitleContainer}>
-                        <p className={styles.detailsTitleText}>الضوابط والشروط</p>
                         <div className={styles.detailsSvgContainer}>
                             <Image
                                 src={"/contract-coverage-svgrepo-com.svg"}
@@ -81,42 +67,21 @@ export default function Introduction() {
                                 draggable={false}
                             />
                         </div>
+                        <p className={styles.detailsTitleText}>{translations('TermsAndConditionsTitle')}</p>
                     </div>
-                    <p className={styles.introductionText}>
-                        1- آخر موعد لتلقي المشاركات سيكون يوم 1 محرم 1446هـ الموافق 29 يوليو 2024م.
-                    </p>
-                    <p className={styles.introductionText}>
-                        2- تقدم جميع المشاركات في صيغة ملفات الكترونية رقمية (JPEG).
-                    </p>
-                    <p className={styles.introductionText}>
-                        3- يسمح المشاركة بعدد 4 صور كحد أعلى لكل مشترك بحيث لا تزيد حجم الصورة عن GB 1 .
-                    </p>
-                    <p className={styles.introductionText}>
-                        4- لا يمكن إدخال أي مؤثرات على الصور المشاركة ويسمح بإجراء تعديلات على الألوان.
-                    </p>
-                    <p className={styles.introductionText}>
-                        5- يجب أن تكون الصور من بيئة مدينة ينبع وأن لم يسبق المشاركة بها في مسابقات.
-                    </p>
-                    <p className={styles.introductionText}>
-                        6- المشاركة تعني أقرار بملكيته للصورة أو الصور المشترك بها ويقر بالسماح للجنة المسابقة.
-                    </p>
-                    <p className={styles.introductionText}>
-                        7- يحق للمشارك وضع عنوان للصورة وذكر الهدف أو تعليق مختصر لها.
-                    </p>
-                    <p className={styles.introductionText}>
-                        8- يجب كتابة أسم المشارك بالإضافة رقم الهاتف والبريد الالكتروني.
-                    </p>
-                    <p className={styles.introductionText}>
-                        9- لجنة الجائزة الحق في إعادة طباعة ونسخ الصور مجاناً لأي إغراض إعلامية في الصحف أو المجلات أو
-                        المعرض أو التقاويم السنوية وكذلك لجميع أنواع النشر للشركاء، وتعتبر المشاركة في المسابقة قبول
-                        بذلك
-                    </p>
-                    <p className={styles.introductionText}>
-                        10- سيتم إشعار الفائزين بالمسابقة عبر أرقام الهواتف و البريد الالكتروني </p>
+                    <p className={styles.introductionText}>{translations('TermsAndConditionsText1')}</p>
+                    <p className={styles.introductionText}>{translations('TermsAndConditionsText2')}</p>
+                    <p className={styles.introductionText}>{translations('TermsAndConditionsText3')}</p>
+                    <p className={styles.introductionText}>{translations('TermsAndConditionsText4')}</p>
+                    <p className={styles.introductionText}>{translations('TermsAndConditionsText5')}</p>
+                    <p className={styles.introductionText}>{translations('TermsAndConditionsText6')}</p>
+                    <p className={styles.introductionText}>{translations('TermsAndConditionsText7')}</p>
+                    <p className={styles.introductionText}>{translations('TermsAndConditionsText8')}</p>
+                    <p className={styles.introductionText}>{translations('TermsAndConditionsText9')}</p>
+                    <p className={styles.introductionText}>{translations('TermsAndConditionsText10')}</p>
                 </div>
 
                 <div className={styles.introTitleContainer}>
-                    <p className={styles.detailsTitleText}>طريقة المشاركة</p>
                     <div className={styles.detailsSvgContainer}>
                         <Image
                             src={"/click-svgrepo-com.svg"}
@@ -127,9 +92,10 @@ export default function Introduction() {
                             draggable={false}
                         />
                     </div>
+                    <p className={styles.detailsTitleText}>{translations('HowToParticipateTitle')}</p>
                 </div>
                 <p className={styles.introductionText}>
-                    للمشاركة يرجى الضغط <a href={"https://forms.gle/Z4tjt7tWedmVy72o8"}>هنا</a>
+                    {translations('HowToParticipateText')}<a href={"https://forms.gle/Z4tjt7tWedmVy72o8"}>{translations('HowToParticipateTextLink')}</a>
                 </p>
 
                 <div className={styles.footer}>
@@ -148,7 +114,7 @@ export default function Introduction() {
                         ></Image>
                     </div>
                     <div className={styles.outerfooter}>
-                        <p>جميع الحقوق محفوظة للهيئة الملكية للجبيل وينبع 2024</p>
+                        <p>{translations('rights')}</p>
                     </div>
                 </div>
 

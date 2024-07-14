@@ -7,13 +7,24 @@
     height: 90px;
 }
 
-.headerLanguagesSwitchContainer {
+.headerLanguagesSwitchContainer:lang(ar) {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     gap: 5px;
-    right: 305px;
+    right: 690px;
+    padding: 5px;
+    transition: 300ms ease-in-out;
+}
+
+.headerLanguagesSwitchContainer:lang(en) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 5px;
+    left: 690px;
     padding: 5px;
     transition: 300ms ease-in-out;
 }
@@ -30,8 +41,8 @@
     border-radius: .625rem;
 }
 
-.englishLangSvg:hover {
-    background-color: rgba(var(--secondary-1-rgb), 0.1);
+.logo {
+
 }
 
 @font-face {
@@ -49,32 +60,148 @@
 }
 
 @media (min-width: 320px ) and (max-width: 374px) {
-    .headerLanguagesSwitchContainer{
-        right: 50px;
+    :lang(ar) .headerContainer {
+        justify-content: start;
+    }
+
+    :lang(ar) .headerLanguagesSwitchContainer {
+        right: 255px;
+    }
+
+    :lang(ar) .logo {
+        position: relative;
+        right: 20px;
+    }
+
+    :lang(en) .headerContainer {
+        justify-content: center;
+    }
+
+    :lang(en) .headerLanguagesSwitchContainer {
+        left: 205px;
+    }
+
+    :lang(en) .logo {
+        position: relative;
+        right: 25px;
     }
 }
 
 @media (min-width: 375px ) and (max-width: 424px) {
-    .headerLanguagesSwitchContainer{
-        right: 60px;
+    :lang(ar) .headerContainer {
+        justify-content: start;
+    }
+
+    :lang(ar) .headerLanguagesSwitchContainer {
+        right: 305px;
+    }
+
+    :lang(ar) .logo {
+        position: relative;
+        right: 50px;
+    }
+
+    :lang(en) .headerContainer {
+        justify-content: center;
+    }
+
+    :lang(en) .headerLanguagesSwitchContainer {
+        left: 230px;
+    }
+
+    :lang(en) .logo {
+        position: relative;
+        right: 25px;
     }
 }
 
 @media (min-width: 425px ) and (max-width: 767px) {
-    .headerLanguagesSwitchContainer{
-        right: 90px;
+    :lang(ar) .headerContainer {
+        justify-content: start;
+    }
+
+    :lang(ar) .headerLanguagesSwitchContainer {
+        right: 355px;
+    }
+
+    :lang(ar) .logo {
+        position: relative;
+        right: 80px;
+    }
+
+    :lang(en) .headerContainer {
+        justify-content: center;
+    }
+
+    :lang(en) .headerLanguagesSwitchContainer {
+        left: 250px;
+    }
+
+    :lang(en) .logo {
+        position: relative;
+        right: 25px;
     }
 }
 
 @media (min-width: 768px ) and (max-width: 1023px) {
-    .headerLanguagesSwitchContainer{
-        right: 240px;
+    :lang(ar) .headerContainer {
+        justify-content: start;
+    }
+
+    :lang(ar) .headerLanguagesSwitchContainer {
+        right: 675px;
+    }
+
+    :lang(ar) .logo {
+        position: relative;
+        right: 260px;
+    }
+
+    :lang(en) .headerContainer {
+        justify-content: center;
+    }
+
+    :lang(en) .headerLanguagesSwitchContainer {
+        left: 420px;
+    }
+
+    :lang(en) .logo {
+        position: relative;
+        right: 25px;
+    }
+
+}
+
+@media (min-width: 1024px ) and (max-width: 1438px) {
+    :lang(ar) .headerContainer {
+        justify-content: start;
+    }
+
+    :lang(ar) .headerLanguagesSwitchContainer {
+        right: 875px;
+    }
+
+    :lang(ar) .logo {
+        position: relative;
+        right: 370px;
+    }
+
+    :lang(en) .headerContainer {
+        justify-content: center;
+    }
+
+    :lang(en) .headerLanguagesSwitchContainer {
+        left: 550px;
+    }
+
+    :lang(en) .logo {
+        position: relative;
+        right: 5px;
     }
 }
 
-
-@media (min-width: 1024px ) and (max-width: 1438px) {
-    .headerLanguagesSwitchContainer{
-        right: 370px;
+@media (min-width: 1440px ) and (max-width: 1932px) {
+    :lang(ar) .headerLanguagesSwitchContainer {
+        right: 700px;
     }
 }
