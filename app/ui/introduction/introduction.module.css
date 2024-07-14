@@ -146,7 +146,7 @@
     }
 
     :lang(en).detailsTitleContainer {
-        margin-left: 5px;
+        margin-left: 0;
     }
 
     :lang(en).introTitleContainer {
@@ -154,7 +154,7 @@
     }
 
     :lang(en).introductionText {
-        margin-left: 25px;
+        margin-left: 30px;
         max-width: 28ch;
     }
 
@@ -182,7 +182,7 @@
     }
 
     :lang(en).detailsTitleContainer {
-        margin-left: 5px;
+        margin-left: 0;
     }
 
     :lang(en).introTitleContainer {
