@@ -1,10 +1,23 @@
+"use client"
 import styles from "@/app/ui/introduction/introduction.module.css";
 import Image from "next/image";
-import {useTranslations} from "next-intl";
+import {useLocale, useTranslations} from "next-intl";
+import {useEffect, useState} from "react";
 
 
 export default function Introduction() {
     const translations = useTranslations("HomePage");
+
+    const locale = useLocale();
+    const [formLink, setFormLink] = useState<string>("en");
+
+    useEffect(() => {
+        if (locale === 'ar') {
+            setFormLink("https://tally.so/r/w2r1aD");
+        } else {
+            setFormLink("https://tally.so/r/mDevpX");
+        }
+    }, [locale]);
     return (
         <div className={styles.introductionRoot}>
             <div className={styles.introductionRootContainer}>
@@ -95,7 +108,7 @@ export default function Introduction() {
                     <p className={styles.detailsTitleText}>{translations('HowToParticipateTitle')}</p>
                 </div>
                 <p className={styles.introductionText}>
-                    {translations('HowToParticipateText')}<a href={"https://forms.gle/Z4tjt7tWedmVy72o8"}>{translations('HowToParticipateTextLink')}</a>
+                    {translations('HowToParticipateText')}<a href={formLink}>{translations('HowToParticipateTextLink')}</a>
                 </p>
 
                 <div className={styles.footer}>

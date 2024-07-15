@@ -17,7 +17,8 @@ export default function Header() {
         } else {
             setLang("ع");
         }
-    }, [locale]);    const langSwitch = () => {
+    }, [locale]);
+    const langSwitch = () => {
         if (locale === "ar") {
             router.replace('/', {locale: 'en'});
 
