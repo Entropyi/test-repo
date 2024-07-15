@@ -571,7 +571,12 @@
     }
 
     .headerArticleImage {
-        position: relative;;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    :lang(en).headerArticleImage {
+        position: relative;
         margin-bottom: 20px;
     }
 
