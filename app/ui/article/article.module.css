@@ -575,10 +575,6 @@
         margin-bottom: 20px;
     }
 
-    :lang(en).headerArticleImage {
-        position: relative;
-        margin-bottom: 20px;
-    }
 
     :lang(en) .card {
         width: 80px;
