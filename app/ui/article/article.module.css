@@ -535,7 +535,6 @@
         margin-bottom: 5px;
     }
 
-
     :lang(ar).title {
         width: 400px;
         text-align: right;
@@ -574,5 +573,9 @@
     .headerArticleImage {
         position: relative;;
         margin-bottom: 20px;
+    }
+
+    :lang(en) .card {
+        width: 80px;
     }
 }
