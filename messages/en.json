@@ -1,12 +1,13 @@
 {
   "HomePage": {
+    "pageTitle": "Environmental Photography Competition",
     "title": "Environmental Photography Competition 2024",
     "day": "11",
-    "month": "July",
+    "month": "Aug",
     "from": "From",
-    "starting": "2024 July 29",
+    "starting": "2024 August 11",
     "to": "To",
-    "ending": "2024 July 29",
+    "ending": "2024 October 11",
     "citiesCoveredTitle": "In These Cites",
     "city": "Yanbu",
     "CompDetailsTitle": "Competition Details",
@@ -27,10 +28,40 @@
     "TermsAndConditionsText7": "7-The participant must write their name, phone number, and email.",
     "TermsAndConditionsText8": "8-Participating in this competition is a clear declaration from the participant that submitted photos are belong to him and he is authorizing us (the competition organizers) use subject photos in any publications with full rights without getting any permission from the mentioned.",
     "TermsAndConditionsText9": "9-The award committee has the right to reprint and copy the photos for free for any media purposes in newspapers, magazines, exhibitions, or annual calendars, as well as for all types of publishing by partners. Participation in the competition is considered acceptance of this.",
-    "TermsAndConditionsText10":"10-Winners will be notified through email and phone number.",
+    "TermsAndConditionsText10": "10-Winners will be notified through email and phone number.",
     "HowToParticipateTitle": "How to participate",
     "HowToParticipateText": "To participate, please click",
     "HowToParticipateTextLink": "Here",
-    "rights":"All Rights Reserved to the Royal Commission for Jubail and Yanbu 2024"
+    "rights": "All Rights Reserved to the Royal Commission for Jubail and Yanbu 2024"
+  },
+  "FormPage": {
+    "title": "Environmental Photography Competition 2024",
+    "FullName": "Full Name",
+    "Email": "Email",
+    "Age": "Age",
+    "PhoneNumber": "Phone Number",
+    "Image": "Image",
+    "ImageRequirements": "Accepted formats [jpg,jpeg,png]",
+    "PhotoTitle": "Photo Title",
+    "Comments": "Comments",
+    "PhotoLocation": "Photo Location",
+    "PhotoLocationRequirements": "Please attach the location where the photo was taken with a Google Maps link, for example: https://maps.app.goo.gl/qQT5wbQEhzz6CcdeA",
+    "Photo Purpose": "Photo Purpose",
+    "TermsAgreement": "Checking the box is an acknowledgment that you have read the terms of the competition and acknowledges your acceptance of them",
+    "Submit": "Submit"
+  },
+  "formErrorMessages": {
+    "fullNameRequired": "Full name is required",
+    "emailRequired": "Email is required",
+    "emailInvalid": "The email is not valid",
+    "ageRequired": "Age is required",
+    "ageLessThanMin": "Age must be at least 5",
+    "ageLargerThanMax": "Age must be at most 99",
+    "phoneNumberRequired": "Phone number is required",
+    "phoneNumberLessThanMin": "Phone number must be at least 9 digits",
+    "phoneNumberLargerThanMax": "Phone number must be at most 10 digits",
+    "imageRequired": "Image is required",
+    "locationRequired": "The location of the image is required",
+    "termsAgreementRequired": "Agreeing to the terms is required"
   }
 }

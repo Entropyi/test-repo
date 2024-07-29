@@ -3,11 +3,11 @@ import styles from "@/app/ui/introduction/introduction.module.css";
 import Image from "next/image";
 import {useLocale, useTranslations} from "next-intl";
 import {useEffect, useState} from "react";
+import Link from "next/link";
 
 
 export default function Introduction() {
     const translations = useTranslations("HomePage");
-
     const locale = useLocale();
     const [formLink, setFormLink] = useState<string>("en");
 
@@ -108,7 +108,7 @@ export default function Introduction() {
                     <p className={styles.detailsTitleText}>{translations('HowToParticipateTitle')}</p>
                 </div>
                 <p className={styles.introductionText}>
-                    {translations('HowToParticipateText')}<a href={formLink}>{translations('HowToParticipateTextLink')}</a>
+                    {translations('HowToParticipateText')}<Link href={`/${locale}/form`}>{translations('HowToParticipateTextLink')}</Link>
                 </p>
 
                 <div className={styles.footer}>

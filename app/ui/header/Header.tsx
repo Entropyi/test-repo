@@ -2,12 +2,14 @@
 
 import styles from "./header.module.css";
 import Image from "next/image";
-import {useRouter} from "@/navigation";
+import {useRouter, usePathname} from "@/navigation";
 import {useEffect, useState} from 'react';
 import {useLocale} from 'next-intl';
+import Link from "next/link";
 
 export default function Header() {
     const router = useRouter();
+    const pathName = usePathname();
     const locale = useLocale();
     const [lang, setLang] = useState<string>("en");
 
@@ -20,10 +22,10 @@ export default function Header() {
     }, [locale]);
     const langSwitch = () => {
         if (locale === "ar") {
-            router.replace('/', {locale: 'en'});
+            router.replace(pathName, {locale: 'en'});
 
         } else {
-            router.replace('/', {locale: 'ar'});
+            router.replace(pathName, {locale: 'ar'});
         }
     }
     return (
@@ -45,13 +47,13 @@ export default function Header() {
             <div
                 className={styles.headerLogoContainer}
             >
-                <Image
-                    src={"/navbar_logo.png"}
-                    alt={"RCYCI Logo"}
-                    width={154.3}
-                    height={45}
-                    className={styles.logo}
-                />
+                    <Image
+                        src={"/navbar_logo.png"}
+                        alt={"RCYCI Logo"}
+                        width={154.3}
+                        height={45}
+                        className={styles.logo}
+                    />
             </div>
 
         </div>

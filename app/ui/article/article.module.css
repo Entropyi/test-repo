@@ -74,7 +74,7 @@
 }
 
 .title {
-    font-family: "Font-Regular";
+    font-family: "Font-Bold";
     color: var(--font-black);
     margin: 0 1.1428571429rem;
     font-size: 1.5rem;
@@ -211,6 +211,13 @@
     font-style: normal;
     font-weight: 400;
     src: url("/fonts/PingAR_LT_Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Font-Bold";
+    font-style: normal;
+    font-weight: 500;
+    src: url("/fonts/PingAR+LT-Bold.otf") format("opentype");
 }
 
 @media (min-width: 320px ) and (max-width: 374px) {
