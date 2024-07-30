@@ -3,6 +3,7 @@ import Image from "next/image";
 import {useTranslations} from "next-intl";
 
 export default function Footer() {
+    const successTranslation = useTranslations("SuccessPage");
     const homeTranslation = useTranslations("HomePage");
 
     return (
@@ -19,8 +20,8 @@ export default function Footer() {
                         />
                     </div>
                     <div className={styles.successTextContainer}>
-                        <h3 className={styles.formTitleText}>Thank you for participating</h3>
-                        <p className={styles.formSuccessLabel}>you will be contacted soon</p>
+                        <h3 className={styles.formTitleText}>{successTranslation("title")}</h3>
+                        <p className={styles.formSuccessLabel}>{successTranslation("subText")}</p>
                     </div>
                 </div>
             </div>

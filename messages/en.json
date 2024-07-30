@@ -36,18 +36,18 @@
   },
   "FormPage": {
     "title": "Environmental Photography Competition 2024",
-    "FullName": "Full Name",
-    "Email": "Email",
+    "FullName": "Full Name*",
+    "Email": "Email*",
     "Age": "Age",
-    "PhoneNumber": "Phone Number",
-    "Image": "Image",
+    "PhoneNumber": "Phone Number*",
+    "Image": "Image*",
     "ImageRequirements": "Accepted formats [jpg,jpeg,png]",
     "PhotoTitle": "Photo Title",
     "Comments": "Comments",
     "PhotoLocation": "Photo Location",
-    "PhotoLocationRequirements": "Please attach the location where the photo was taken with a Google Maps link, for example: https://maps.app.goo.gl/qQT5wbQEhzz6CcdeA",
+    "PhotoLocationRequirements": "Where did you take the picture",
     "Photo Purpose": "Photo Purpose",
-    "TermsAgreement": "Checking the box is an acknowledgment that you have read the terms of the competition and acknowledges your acceptance of them",
+    "TermsAgreement": "Checking the box is an acknowledgment that you have read the terms of the competition and acknowledges your acceptance of them*",
     "Submit": "Submit"
   },
   "formErrorMessages": {
@@ -63,5 +63,9 @@
     "imageRequired": "Image is required",
     "locationRequired": "The location of the image is required",
     "termsAgreementRequired": "Agreeing to the terms is required"
+  },
+  "SuccessPage": {
+    "title": "Thank you for participating",
+    "subText": "you will be contacted soon"
   }
 }

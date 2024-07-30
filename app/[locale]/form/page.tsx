@@ -93,7 +93,7 @@ export default function Page() {
 
 
                                 <div className={styles.formGroupOne}>
-
+it
                                     <div className={styles.emailConatiner}>
                                         <label className={styles.formLabel}
                                                htmlFor="">{formTranslations("Email")} </label>
